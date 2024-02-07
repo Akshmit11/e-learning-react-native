@@ -1,8 +1,9 @@
 {
   "expo": {
-    "name": "e-learning",
-    "slug": "e-learning",
+    "name": "e-learning-react-native",
+    "slug": "e-learning-react-native",
     "version": "1.0.0",
+    "scheme": "com.elearningreactnative.app",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -25,6 +26,9 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-font"
+    ]
   }
 }

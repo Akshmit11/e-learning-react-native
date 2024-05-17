@@ -1,7 +1,7 @@
 import { ClerkProvider, SignedIn, SignedOut } from "@clerk/clerk-expo";
 import { useFonts } from "expo-font";
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { StatusBar as ExpoStatusBar } from "expo-status-bar";
+import { Platform, SafeAreaView, StatusBar, StyleSheet, Text, View } from "react-native";
 import Colors from "./src/constants/Colors";
 import LoginScreen from "./src/screens/LoginScreen";
 import * as SecureStore from "expo-secure-store";
@@ -47,7 +47,7 @@ export default function App() {
         <SignedOut>
           <LoginScreen />
         </SignedOut>
-        <StatusBar style="auto" />
+        <ExpoStatusBar style="auto" />
       </View>
     </ClerkProvider>
   );
